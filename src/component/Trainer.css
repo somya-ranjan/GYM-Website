@@ -1,0 +1,131 @@
+:root{
+    --trainer-main_bg: #c0c0c0;
+    --primerry_color: orangered;
+    --trainer_card_bg_color: #747474;
+    --trainer_card_h_color: #ffffff;
+    --trainer_card_p_color: #dbdbdb;
+    --trainer_card_a_color: #000;
+    --fb: #1c59dd;
+    --inst: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    --twiter:#009eff 
+}
+.trainer_comp{
+    background-color: var(--trainer-main_bg);
+    text-align: center;
+    text-transform: capitalize;
+}
+.trainer_comp h1{
+    color: var(--primerry_color);
+    font-size: 60px;
+    padding-top: 50px;
+}
+.trainer_comp_content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px 0 70px 0;
+
+}
+.trainer img{
+    height: 400px;
+}
+.trainer_description{
+    margin: -5px auto;
+    width: 300px;
+    background-color: var(--trainer_card_bg_color);
+    padding: 20px 10px 30px 10px;
+    border-radius: 15px;
+}
+.trainer_description h4{
+    color: var(--trainer_card_p_color);
+    font-size: 25px;
+}
+.trainer_description p{
+    margin: 10px 0;
+    color: var(--trainer_card_p_color);
+}
+.trainer_description .social_media{
+    margin-top: 20px;
+}
+.trainer_description .social_media a{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: var(--trainer_card_a_color);
+    font-size: 25px;
+    border-radius: 55%;
+}
+.trainer_description .social_media a:nth-child(1){
+    padding: 5px 13px;
+    background-color: var(--fb);
+    color: #ffffff;
+}
+.trainer_description .social_media a:nth-child(1):hover{
+    color: #000;
+    background-color: var(--trainer_card_bg_color);
+}
+.trainer_description .social_media a:nth-child(2){
+    background: var(--inst);
+    color: #ffffff;
+}
+.trainer_description .social_media a:nth-child(2):hover{
+    color: #000;
+    background: var(--trainer_card_bg_color);
+}
+.trainer_description .social_media a:nth-child(3){
+    background-color: var(--twiter);
+    color: #ffffff;
+}
+.trainer_description .social_media a:nth-child(3):hover{
+    color: #000;
+    background-color: var(--trainer_card_bg_color);
+}
+
+
+/* MEDIA QUERRY */
+
+/* -------------For mobile---------------- */
+@media(max-width:426px){
+    .trainer_comp h1{
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+    .trainer{
+        padding: 20px 0 30px 0;
+    }
+    .trainer img{
+        width: 250px;
+    }
+}
+
+/* -------------For sm_tablets---------------- */
+@media(min-width:426px) and (max-width:768px){
+    .trainer_comp h1{
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+    .trainer{
+        padding: 20px 0 30px 0;
+    }
+}
+
+/* -------------For L_tablets and S_laptop---------------- */
+@media(min-width:769px) and (max-width:1024px){
+    .trainer_comp h1{
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+    .trainer{
+        padding: 20px 0 30px 0;
+    }
+}
+/* -------------For L_Loptop Ans L_Destop---------------- */
+@media(min-width:1025px){
+    .trainer_comp h1{
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+    .trainer{
+        padding: 20px 0;
+    }
+}

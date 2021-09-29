@@ -1,0 +1,275 @@
+:root{
+    --primerry_gradent:linear-gradient(rgba(2, 2, 2, 0.6),rgba(2, 1, 1, 0.8));
+    --logo_color: orangered;
+    --h2_color: #ffd033;
+    --span_color: rgb(255, 255, 255);
+    --h4_color: #fff
+}
+.footer_comp{
+    height: auto;
+    background:  var(--primerry_gradent),url("https://images.pexels.com/photos/949134/pexels-photo-949134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+}
+.footer_comp_content{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.footer_comp_content .logo h1{
+    color: var(--logo_color);
+    font-size: 60px;
+}
+.footer_comp_content .logo h1 span{
+    color: var(--span_color);
+}
+.footer_comp_content h2{
+   color: var(--h2_color);
+   margin-bottom: 20px;
+}
+.openning_time_data{
+    display: flex;
+}
+.openning_time_data,.social_media,.contact_us{
+    color: var(--h4_color);
+    text-transform: capitalize;
+}
+.email p{
+    text-transform: none;
+}
+.openning_time_data h4{
+    font-weight: 200;
+}
+.openning_time_data .day{
+    padding-right: 50px
+}
+.footer_comp_content .social_media{
+    margin-top: -3px;
+    cursor: pointer;
+}
+.footer_comp_content .social_media h2{
+    margin-bottom: -5px;
+}
+.footer_comp_content .social_media h3{
+    margin-bottom: -10px;
+}
+.footer_comp_content .social_media i{
+    margin-right: 30px;
+}
+.footer_comp_content .contact_us .phone p{
+    margin-bottom: 30px;
+}
+.copy_right{
+    text-align: center;
+    margin-top: 130px;
+    color: var(--h4_color);
+}
+.copy_right h5{
+    padding-bottom: 20px;
+}
+.copy_right .logo{
+    color: var(--logo_color);
+}
+
+
+
+/* MEDIA QUERRY */
+
+/* -------------For mobile---------------- */
+@media(max-width:426px){
+    .footer_comp{
+        
+    }
+    .footer_comp_content{
+        padding-top: 50px;
+    }
+    .footer_comp_content .logo h1{
+        display: none;
+    }
+    .footer_comp_content h2{
+       margin-bottom: 10px;
+       font-size: 15px;
+    }
+    .openning_time_data{
+        font-size: 10px;
+    }
+    .openning_time_data .day{
+        padding-right: 10px
+    }
+    .footer_comp_content .social_media h2{
+        margin-bottom: -12px;
+    }
+    .footer_comp_content .social_media h3{
+        font-size: 12px;
+        margin-bottom: -15px;
+    }
+    .footer_comp_content .social_media i{
+        margin-right: 5px;
+    }
+    .footer_comp_content .contact_us .phone h1{
+        font-size: 15px;
+    }
+    .footer_comp_content .contact_us .phone p{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .email p{
+        font-size: 15px;
+    }
+    .copy_right{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .copy_right h5{
+        font-size: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+/* -------------For sm_tablets---------------- */
+@media(min-width:426px) and (max-width:768px){
+    .footer_comp{
+        
+    }
+    .footer_comp_content{
+        padding-top: 50px;
+    }
+    .footer_comp_content .logo h1{
+        display: none;
+    }
+    .footer_comp_content h2{
+       margin-bottom: 10px;
+       font-size: 15px;
+    }
+    .openning_time_data{
+        font-size: 12px;
+    }
+    .openning_time_data .day{
+        padding-right: 20px
+    }
+    .footer_comp_content .social_media h2{
+        margin-bottom: -12px;
+    }
+    .footer_comp_content .social_media h3{
+        font-size: 15px;
+        margin-bottom: -15px;
+    }
+    .footer_comp_content .social_media i{
+        margin-right: 5px;
+    }
+    .footer_comp_content .contact_us .phone h1{
+        font-size: 15px;
+    }
+    .footer_comp_content .contact_us .phone p{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .email p{
+        font-size: 13px;
+    }
+    .copy_right{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .copy_right h5{
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+}
+
+/* -------------For L_tablets and S_laptop---------------- */
+@media(min-width:769px) and (max-width:1500px){
+    .footer_comp{
+        
+    }
+    .footer_comp_content{
+        padding-top: 50px;
+    }
+    .footer_comp_content .logo h1{
+        font-size: 30px;
+    }
+    .footer_comp_content h2{
+       margin-bottom: 10px;
+       font-size: 20px;
+    }
+    .openning_time_data{
+        font-size: 15px;
+    }
+    .openning_time_data .day{
+        padding-right: 20px
+    }
+    .footer_comp_content .social_media h2{
+        margin-bottom: -12px;
+    }
+    .footer_comp_content .social_media h3{
+        font-size: 17px;
+        margin-bottom: -15px;
+    }
+    .footer_comp_content .social_media i{
+        margin-right: 5px;
+    }
+    .footer_comp_content .contact_us .phone h1{
+        font-size: 20px;
+    }
+    .footer_comp_content .contact_us .phone p{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .email p{
+        font-size: 17px;
+    }
+    .copy_right{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .copy_right h5{
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+}
+/* -------------For L_Loptop Ans L_Destop---------------- */
+/* @media(min-width:1025px){
+    .footer_comp{
+        
+    }
+    .footer_comp_content{
+        padding-top: 50px;
+    }
+    .footer_comp_content .logo h1{
+        font-size: 30px;
+    }
+    .footer_comp_content h2{
+       margin-bottom: 10px;
+       font-size: 20px;
+    }
+    .openning_time_data{
+        font-size: 15px;
+    }
+    .openning_time_data .day{
+        padding-right: 20px
+    }
+    
+    .footer_comp_content .social_media h3{
+        font-size: 17px;
+    }
+    .footer_comp_content .social_media i{
+        margin-right: 5px;
+    }
+    .footer_comp_content .contact_us .phone h1{
+        font-size: 20px;
+    }
+    .footer_comp_content .contact_us .phone p{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .email p{
+        font-size: 17px;
+    }
+    .copy_right{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .copy_right h5{
+        font-size: 10px;
+        padding-bottom: 30px;
+    }
+} */

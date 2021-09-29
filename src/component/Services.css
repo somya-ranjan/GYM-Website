@@ -1,0 +1,398 @@
+:root{
+    --primerry_gradent:linear-gradient(rgba(2, 2, 2, 0.6),rgba(2, 1, 1, 0.8));
+    --service_bg: #E5E5E5;
+    --primerry_color: orangered;
+    --h3_color: #fff;
+    --p_color: #dbdbdb;
+    --card_bg_color: #ffd7d7;
+    --card_h_color: orangered;
+    --card_p_color: #dbdbdb;
+    --card_i_color: #ff0000;
+}
+
+.services_comp_main{
+    background-color: var(--service_bg);
+}
+.services_comp{
+    height: 100vh;
+    background: var(--primerry_gradent),url("https://images.unsplash.com/photo-1570829460005-c840387bb1ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80");
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+}
+.services_comp img{
+    height: 650px;
+    margin-top: 40px;
+    filter: grayscale(60%);
+    filter: brightness(70%);
+}
+.services_cont{
+    width: 600px;
+}
+.services_cont h1{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    color: var(--primerry_color);
+}
+.services_cont h3{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: var(--h3_color);
+}
+.services_cont p{
+    font-size: 25px;
+    text-align: justify;
+    color: var(--p_color);
+}
+
+/* card Section */
+
+.card_content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+    margin: auto;
+    margin-top: -7%;
+}
+.card{
+    width: 25vw;
+    text-align: center;
+    background-color: var(--card_bg_color);
+    border: 3px solid var(--service_bg) ;
+    padding: 30px 20px;
+}
+.card i{
+    font-size: 70px;
+    color: var(--card_i_color);
+}
+.card h2{
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.card span{
+    color: var(--card_h_color);
+}
+
+/* faslity Section */
+
+.faslity_comp{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 50px 0 100px 0;
+    margin: auto;
+}
+.faslity_comp img{
+    filter: drop-shadow(10px 17px 10px rgb(59, 59, 59));
+}
+.faslity_comp_content{
+    width: 500px;
+    text-align: justify;
+
+}
+.faslity_comp_content h1{
+    font-size: 60px;
+    text-align: center;
+    color: var(--primerry_color);
+    text-transform: capitalize;
+}
+.faslity_comp_content h4{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.faslity_comp_content ul li{
+    text-transform: capitalize;
+}
+.faslity_comp_content ul li span{
+    color: var(--card_i_color);
+    text-transform: capitalize;
+}
+
+/* MEDIA QUERRY */
+
+/* -------------For mobile---------------- */
+@media(max-width:426px){
+    .services_comp{
+        height: auto;
+        padding: 20px 5px 50px 5px;
+    }
+    .services_comp img{
+        height: 300px;
+        width: 150px;
+        margin-top: 40px;
+    }
+    .services_cont{
+        width: 60vw;
+    }
+    .services_cont h1{
+        margin: 0 0 10px 0;
+        font-size: 30px;
+    }
+    .services_cont h3{
+        font-size: 13px;
+    }
+    .services_cont p{
+        font-size: 12px;
+    }
+    
+    /* card Section */
+    
+    .card_content{
+        width: 70vw;
+        margin-top: -7%;
+    }
+    .card{
+        width: 70vw;
+        padding: 30px 20px;
+    }
+    .card i{
+        font-size: 40px;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+  
+    /* faslity Section */
+    
+    .faslity_comp{
+        margin-top: 50px;
+        padding: 50px 5px 100px 5px;
+        margin: auto;
+    }
+    .faslity_comp img{
+        height: 70px;
+        margin-top: 100px;
+        margin-right: 10px
+    }
+    .faslity_comp_content{
+        width: 56vw;
+    
+    }
+    .faslity_comp_content h1{
+        font-size: 30px;
+    }
+    .faslity_comp_content h4{
+        margin: 10px 0;
+        font-size: 12px;
+    }
+    .faslity_comp_content ul li{
+        font-size: 10px;
+    }
+}
+
+
+/* -------------For sm_tablets---------------- */
+@media(min-width:426px) and (max-width:768px){
+    .services_comp{
+        height: auto;
+        padding: 20px 5px 50px 5px;
+    }
+    .services_comp img{
+        height: 250px;
+        margin-top: 40px;
+    }
+    .services_cont{
+        width: 60vw;
+    }
+    .services_cont h1{
+        margin: 0 0 10px 0;
+        font-size: 40px;
+    }
+    .services_cont h3{
+        font-size: 15px;
+    }
+    .services_cont p{
+        font-size: 13px;
+    }
+    
+    /* card Section */
+    
+    .card_content{
+        width: 70vw;
+        margin-top: -7%;
+    }
+    .card{
+        width: 70vw;
+        padding: 30px 20px;
+    }
+    .card i{
+        font-size: 50px;
+    }
+    .card h2{
+        font-size: 30px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+  
+    /* faslity Section */
+    
+    .faslity_comp{
+        margin-top: 50px;
+        padding: 50px 5px 100px 5px;
+        margin: auto;
+    }
+    .faslity_comp img{
+        height: 150px;
+        margin-top: 50px;
+        margin-right: 10px
+    }
+    .faslity_comp_content{
+        width: 45vw;
+    
+    }
+    .faslity_comp_content h1{
+        font-size: 30px;
+    }
+    .faslity_comp_content h4{
+        margin: 10px 0;
+        font-size: 12px;
+    }
+    .faslity_comp_content ul li{
+        font-size: 10px;
+    }
+}
+
+/* -------------For L_tablets and S_laptop---------------- */
+@media(min-width:769px) and (max-width:1500px){
+    .services_comp{
+        height: auto;
+        padding: 30px 5px 70px 5px;
+    }
+    .services_comp img{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .services_cont{
+        width: 60vw;
+    }
+    .services_cont h1{
+        margin: 0 0 10px 0;
+        font-size: 40px;
+    }
+    .services_cont h3{
+        font-size: 17px;
+    }
+    .services_cont p{
+        font-size: 15px;
+    }
+    
+    /* card Section */
+    
+    .card_content{
+        width: 80vw;
+        margin-top: -7%;
+    }
+    .card{
+        width: 40vw;
+        padding: 30px 20px;
+    }
+    .card i{
+        font-size: 50px;
+    }
+    .card h2{
+        font-size: 30px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+    
+    /* faslity Section */
+    
+    .faslity_comp{
+        margin-top: 50px;
+        padding: 50px 5px 100px 5px;
+        margin: auto;
+    }
+    .faslity_comp img{
+        height: 170px;
+        margin-top: 100px;
+        margin-right: 10px
+    }
+    .faslity_comp_content{
+        width: 45vw;
+    
+    }
+    .faslity_comp_content h1{
+        font-size: 40px;
+    }
+    .faslity_comp_content h4{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    .faslity_comp_content ul li{
+        font-size: 15px;
+    }
+}
+/* -------------For L_Loptop Ans L_Destop---------------- */
+  /* @media(min-width:1025px){
+    .services_comp{
+        padding: 30px 5px 70px 5px;
+    }
+    .services_comp img{
+        height: 450px;
+        margin-top: 20px;
+    }
+    .services_cont{
+        width: 60vw;
+    }
+    .services_cont h1{
+        margin: 0 0 10px 0;
+        font-size: 60px;
+    }
+    .services_cont h3{
+        font-size: 25px;
+    }
+    .services_cont p{
+        font-size: 20px;
+    }
+    
+    
+    .card_content{
+        width: 96vw;
+        margin-top: -10%;
+    }
+    .card{
+        width: 32vw;
+        padding: 30px 20px;
+    }
+    .card i{
+        font-size: 70px;
+    }
+    .card h2{
+        font-size: 30px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+    
+    
+    .faslity_comp{
+        margin-top: 50px;
+        padding: 50px 5px 100px 5px;
+        margin: auto;
+    }
+    .faslity_comp img{
+        height: 250px;
+        margin-top: 50px;
+        margin-right: 10px
+    }
+    .faslity_comp_content{
+        width: 45vw;
+    
+    }
+    .faslity_comp_content h1{
+        font-size: 50px;
+    }
+    .faslity_comp_content h4{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    .faslity_comp_content ul li{
+        font-size: 15px;
+    }
+}  */

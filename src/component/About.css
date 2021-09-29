@@ -1,0 +1,109 @@
+:root{
+    --about_bgcolor: #c0c0c0;
+    --primerry_color: orangered;
+}
+.about_comp{
+    height: 100vh;
+    background:var(--about_bgcolor);
+    padding: 50px 0;
+
+}
+.about_comp_content{
+    display: flex;
+    justify-content: space-around;
+}
+.about_comp img{
+    padding-top: 50px;
+    height: 650px;
+    filter: drop-shadow(0 0 10px rgb(117, 116, 116));
+}
+.about_content{
+    width: 45vw;
+}
+.about_content h1{
+    text-align: center;
+    font-size: 60px;
+    color: var(--primerry_color);
+}
+.about_content p{
+    text-align: justify;
+    font-size: 25px;
+}
+
+
+/* MEDIA QUERRY */
+
+/* -------------For mobile---------------- */
+@media(max-width:426px){
+    .about_comp{
+        height: auto;
+        padding: 30px 5px;
+    }
+    .about_comp img{
+        height: 300px;
+    }
+    .about_content h1{
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .about_content p{
+        font-size: 10px;
+        width: 45vw;
+    }
+}
+
+/* -------------For sm_tablets---------------- */
+@media(min-width:426px) and (max-width:768px){
+    .about_comp{
+        height: auto;
+        padding: 30px 5px;
+    }
+    .about_comp img{
+        height: 400px;
+        margin-top: 20px;
+    }
+    .about_content h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    .about_content p{
+        font-size: 15px;
+    }
+}
+
+/* -------------For L_tablets and S_laptop---------------- */
+@media(min-width:769px) and (max-width:1500px){
+    .about_comp{
+        height: auto;
+        padding: 30px 5px;
+    }
+    .about_comp img{
+        height: 500px;
+        margin-top: 20px;
+    }
+    .about_content h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    .about_content p{
+        font-size: 20px;
+    }
+}
+/* -------------For L_Loptop Ans L_Destop---------------- */
+/* @media(min-width:1025px){
+    .about_comp{
+        height: auto;
+        padding: 30px 5px;
+    }
+    .about_comp img{
+        height: 550px;
+    }
+    .about_content h1{
+        font-size: 50px;
+        padding-bottom: 10px;
+    }
+    .about_content p{
+        font-size: 23px;
+    }
+} */

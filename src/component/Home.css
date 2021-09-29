@@ -1,0 +1,170 @@
+
+:root{
+    --main_color: orangered;
+    --primery_color: #e5e5e5;
+}
+
+.home_comp{
+    height: 100vh;
+    width: 100%;
+    background: url("https://images.unsplash.com/photo-1605296867724-fa87a8ef53fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    background-position: center;
+}
+.home_content{
+    color: var(--primery_color);
+    text-transform: capitalize;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.home_content h1{
+    font-size: 65px;
+    line-height: 70px;
+    letter-spacing: 2px;
+}
+.home_content h1 span{
+    color: var(--main_color);
+}
+.home_content p{
+    width: 35vw;
+    font-size: 25px;
+    margin: 30px 0;
+    word-spacing: 2px;
+    text-align: justify;
+}
+.home_content button{
+    margin-left: 0;
+    padding: 10px 50px;
+    font-size: 30px;
+    outline: none;
+    border: 5px solid var(--main_color);
+    border-radius: 50px 0 50px 0;
+    cursor: pointer;
+    transition: all .4s;
+    color: var(--primery_color);
+    background: #000;
+}
+.home_content button:hover{
+    background-color: var(--primery_color);
+    color: var(--main_color);
+    border: 5px solid var(--primery_color);
+
+}
+
+
+
+
+/* MEDIA QUERRY */
+
+/* -------------For mobile---------------- */
+@media(max-width:426px){
+    .home_content{
+        padding-top: 30%;
+        padding-left: 10%;
+    }
+    .home_content h1{
+       font-size: 30px;
+       line-height: normal;
+       letter-spacing: 2px;
+    }
+    .home_content h1 span{
+       font-size: 20px;
+        
+    }
+    .home_content p{
+        width: 60vw;
+        font-size: 15px;
+        margin: 30px 0 0 0;
+        word-spacing: 2px;
+        text-align: justify;
+    }
+    .home_content button{
+        padding: 7px 20px;
+        font-size: 20px;
+        border-radius: 20px 0 20px 0;
+    }
+}
+
+/* -------------For sm_tablets---------------- */
+@media(min-width:426px) and (max-width:768px){
+    .home_content{
+        padding-top: 15%;
+        padding-left: 10%;
+    }
+    .home_content h1{
+       font-size: 40px;
+       line-height: 45px;
+       letter-spacing: 2px;
+    }
+    .home_content h1 span{
+       font-size: 30px;
+    }
+    .home_content p{
+        width: 40vw;
+        font-size: 20px;
+        margin: 30px 0 20px 0;
+        word-spacing: 2px;
+        text-align: justify;
+    }
+    .home_content button{
+        padding: 10px 25px;
+        font-size: 25px;
+        border-radius: 20px 0 20px 0;
+    }
+}
+
+/* -------------For L_tablets and S_laptop---------------- */
+@media(min-width:769px) and (max-width:1500px){
+    .home_comp{
+        height: 100vh;
+    }
+    .home_content{
+        padding-top: 12%;
+        padding-left: 10%;
+    }
+    .home_content h1{
+       font-size: 60px;
+       line-height: 65px;
+       letter-spacing: 2px;
+    }
+    .home_content h1 span{
+       font-size: 50px;
+    }
+    .home_content p{
+        width: 40vw;
+        font-size: 20px;
+        margin: 30px 0 20px 0;
+        word-spacing: 2px;
+        text-align: justify;
+    }
+    .home_content button{
+        padding: 15px 55px;
+        font-size: 25px;
+        border-radius: 50px 0 50px 0;
+    }
+}
+/* -------------For L_Loptop Ans L_Destop---------------- */
+/* @media(min-width:1025px){
+    .home_content{
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+    .home_content h1{
+       font-size: 60px;
+       letter-spacing: 2px;
+    }
+    .home_content h1 span{
+       font-size: 50px;
+    }
+    .home_content p{
+        width: 50vw;
+        font-size: 20px;
+        margin: 30px 0 20px 0;
+        word-spacing: 2px;
+        text-align: justify;
+    }
+    .home_content button{
+        padding: 12px 70px;
+        font-size: 35px;
+        border-radius: 50px 0 50px 0;
+    }
+} */

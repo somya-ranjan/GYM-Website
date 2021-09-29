@@ -1,0 +1,175 @@
+:root{
+    --contact_bgColor: #c0c0c0;
+    --contact_h1_color: orangered;
+    --h2_color: #ffd033;
+    --btn_color: #fff;
+    --contact_i_color: orangered;
+}
+.contact_comp{
+    background-color: var(--contact_bgColor);
+}
+.contact_comp h1{
+    padding-top: 40px;
+    font-size: 60px;
+    text-align: center;
+    color: var(--contact_h1_color);
+}
+.map{
+    width: 90vw;
+    margin: 20px auto;
+}
+.map iframe{
+    width: 90vw;
+    height: 70vh;
+    border-radius: 25px;
+}
+.contact_comp_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    align-items: center;
+}
+.address .loc,.ph{
+    display: flex;
+    margin: 10px 0 40px 0
+}
+.address i{
+   color: var(--contact_i_color);
+   font-size: 50px;
+   margin-right: 30px;
+}
+.address .loc h2{
+    margin-top: -5px;
+}
+.address .ph {
+    margin-left: 5px;
+}
+.address .ph h2{
+    margin: 5px 0 0 10px;
+}
+
+/* Form */
+.form{
+    border-radius: 30px;
+    padding: 50px 30px;
+    box-shadow: -1px -1px 51px -10px rgba(0,0,0,0.82);
+}
+input{
+    width: 30vw;
+    /* height: 20px; */
+    padding: 10px 20px 15px 20px;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+    margin: auto;
+    display: block;
+    border-radius: 25px 0 25px 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+textarea{
+    width: 30vw;
+    margin: 10px auto 40px auto;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 30px 0 30px 0;
+}
+button{
+    font-size: 30px;
+    padding: 10px 100px;
+    outline: none;
+    border: 2px solid var(--contact_h1_color);
+    border-radius: 30px 0 30px 0;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    transition: all .5s;
+    font-weight: 600;
+}
+button:hover{
+    background-color: var(--contact_h1_color);
+    color: var(--btn_color);
+}
+
+
+/* MEDIA QUERRY */
+
+/* -------------For mobile---------------- */
+@media(max-width:426px){
+    
+    .contact_comp h1{
+        font-size: 40px;
+    }
+   
+    /* Form */
+    .form{
+        box-shadow: none;
+    }
+    input{
+        width: 80vw;
+    }
+    textarea{
+        width: 80vw;
+    }
+    button{
+        font-size: 25px;
+        padding: 10px 50px;
+    }
+}
+
+/* -------------For sm_tablets---------------- */
+@media(min-width:426px) and (max-width:768px){
+    .contact_comp h1{
+        font-size: 40px;
+    }
+   
+    /* Form */
+    .form{
+    }
+    input{
+        width: 80vw;
+    }
+    textarea{
+        width: 80vw;
+    }
+}
+
+/* -------------For L_tablets and S_laptop---------------- */
+@media(min-width:769px) and (max-width:1500px){
+    .contact_comp h1{
+        font-size: 50px;
+    }
+   
+    /* Form */
+    input{
+        width: 50vw;
+    }
+    textarea{
+        width: 50vw;
+    }
+}
+/* -------------For L_Loptop Ans L_Destop---------------- */
+/* @media(min-width:1025px){ */
+    /* .contact_comp h1{
+        font-size: 60px;
+    }
+   
+    input{
+        width: 30vw;
+    }
+    textarea{
+        width: 30vw;
+    }
+} */
